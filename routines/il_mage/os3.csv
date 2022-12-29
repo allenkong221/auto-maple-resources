@@ -1,0 +1,61 @@
+*, x=0.236, y=0.080, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=down, jump=False
+*, x=0.241, y=0.161, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Elquines
+    Teleport, direction=right, jump=False
+*, x=0.339, y=0.161, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=right, jump=False
+*, x=0.448, y=0.161, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    SpiritSnow
+    Teleport, direction=down, jump=False
+*, x=0.443, y=0.259, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=right, jump=False
+*, x=0.557, y=0.259, frequency=1, skip=False, adjust=True
+    IceAge
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=right, jump=False
+*, x=0.667, y=0.259, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=2, repetitions=1
+    Blizzard
+    Teleport, direction=up, jump=False
+*, x=0.667, y=0.184, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=up, jump=False
+*, x=0.690, y=0.098, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=right, jump=False
+*, x=0.868, y=0.098, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=False
+*, x=0.885, y=0.178, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=False
+*, x=0.885, y=0.259, frequency=1, skip=False, adjust=True
+    Bolt, direction=left
+    Teleport, direction=left, jump=False
+*, x=0.787, y=0.259, frequency=1, skip=False, adjust=False
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=left, jump=False
+*, x=0.695, y=0.259, frequency=1, skip=False, adjust=False
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=left, jump=False
+*, x=0.603, y=0.259, frequency=1, skip=False, adjust=False
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=left, jump=False
+*, x=0.500, y=0.259, frequency=1, skip=False, adjust=False
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=left, jump=False
+    Lightning, direction=right, attacks=2, repetitions=1
+    ErdaFountain, direction=down
+*, x=0.402, y=0.259, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=up, jump=False
+    Teleport, direction=left, jump=False

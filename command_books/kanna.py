@@ -11,30 +11,31 @@ from src.common.vkeys import press, key_down, key_up
 class Key:
     # Movement
     JUMP = 'space'
-    TELEPORT = 'e'
-    CHARM = 'd'
+    TELEPORT = 'alt'
+    CHARM = 'f4'
 
     # Buffs
-    HAKU = 'f4'
-    AKATSUKI_WARRIOR = 'f3'
-    HOLY_SYMBOL = 'f2'
-    SPEED_INFUSION = 'f1'
+    HAKU = 'delete'
+    #AKATSUKI_WARRIOR = 'f3'
+    #HOLY_SYMBOL = 'f2'
+    #SPEED_INFUSION = 'f1'
+    TOTEM = 'end'
 
     # Skills
-    SHIKIGAMI = 'r'
-    TENGU = 'q'
-    LUCID_SOUL = '1'
-    YAKSHA = '2'
-    VANQUISHER = 'f'
-    KISHIN = 'ctrl'
-    NINE_TAILS = '3'
-    ARACHNID = '4'
-    EXORCIST = 'w'
-    DOMAIN = 'z'
-    ONI_LEGION = '5'
-    BLOSSOM_BARRIER = 'g'
-    YUKIMUSUME = 'c'
-    MANA_BALANCE = 'shift'
+    SHIKIGAMI = 'v'
+    TENGU = 'n'
+    LUCID_SOUL = 'f10'
+    YAKSHA = 'ctrl'
+    VANQUISHER = 'insert'
+    KISHIN = 'x'
+    NINE_TAILS = 'z'
+    ARACHNID = 'k'
+    EXORCIST = 'c'
+    DOMAIN = 'f'
+    ONI_LEGION = 'j'
+    BLOSSOM_BARRIER = 'f8'
+    YUKIMUSUME = 'shift'
+    MANA_BALANCE = 'home'
 
 
 #########################
@@ -118,16 +119,16 @@ class Buff(Command):
         self.buff_time = 0
 
     def main(self):
-        buffs = [Key.SPEED_INFUSION, Key.HOLY_SYMBOL]
+        # buffs = [Key.TOTEM]
         now = time.time()
         if self.haku_time == 0 or now - self.haku_time > 490:
             press(Key.HAKU, 2)
-            press(Key.AKATSUKI_WARRIOR, 2)
+            #press(Key.AKATSUKI_WARRIOR, 2)
             self.haku_time = now
-        if self.buff_time == 0 or now - self.buff_time > settings.buff_cooldown:
-            for key in buffs:
-                press(key, 3, up_time=0.3)
-            self.buff_time = now
+        # if self.buff_time == 0 or now - self.buff_time > settings.buff_cooldown:
+        #     for key in buffs:
+        #         press(key, 3, up_time=0.3)
+        #     self.buff_time = now
 
 
 class Teleport(Command):

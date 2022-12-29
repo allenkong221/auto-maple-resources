@@ -1,0 +1,41 @@
+*, x=0.134, y=0.187, frequency=1, skip=False, adjust=True
+    Elquines
+    Lightning, direction=right, attacks=1, repetitions=1
+    SpiritSnow
+*, x=0.273, y=0.187, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=up, jump=True
+*, x=0.289, y=0.080, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+*, x=0.449, y=0.080, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=True
+*, x=0.471, y=0.187, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    IceAge
+*, x=0.631, y=0.187, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=up, jump=True
+*, x=0.642, y=0.080, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+*, x=0.802, y=0.080, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=True
+*, x=0.802, y=0.187, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+*, x=0.963, y=0.187, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=False
+*, x=0.941, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Bolt, direction=left
+*, x=0.775, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+*, x=0.652, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+*, x=0.519, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+*, x=0.401, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+*, x=0.294, y=0.289, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1

@@ -1,4 +1,4 @@
-*, x=0.681, y=0.291, frequency=1, skip=False, adjust=False
+*, x=0.681, y=0.291, frequency=1, skip=False, adjust=True
     Shikigami, direction=right, attacks=2, repetitions=1
 *, x=0.652, y=0.291, frequency=1, skip=False, adjust=False
     Tengu
@@ -28,7 +28,7 @@
 *, x=0.680, y=0.582, frequency=1, skip=False, adjust=True
     Balance
     Domain
-*, x=0.823, y=0.582, frequency=1, skip=False, adjust=False
+*, x=0.823, y=0.582, frequency=1, skip=False, adjust=True
     Exorcist, jump=True
     Teleport, direction=up, jump=False
     Tengu
@@ -79,9 +79,11 @@
     Shikigami, direction=left, attacks=2, repetitions=1
 *, x=0.110, y=0.582, frequency=1, skip=False, adjust=False
     Yukimusume
+    Wait, duration=0.2
     Tengu
 *, x=0.170, y=0.582, frequency=1, skip=False, adjust=True
     LucidSoul, direction=left
+    Yukimusume
 *, x=0.430, y=0.582, frequency=1, skip=False, adjust=True
     Kishin
     Teleport, direction=right, jump=False

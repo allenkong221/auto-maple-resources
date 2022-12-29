@@ -12,47 +12,47 @@ class Key:
     # Movement
     JUMP = 'space'
     FLASH_JUMP = 'space'
-    IMPALE = '1'
-    RESONANCE = '2'
-    PLUMMET = 'r'
-    FEATHER_FLOAT = 'f'
-    HIGH_RISE = 'ctrl'
+    IMPALE = 'c'
+    RESONANCE = 'shift'
+    PLUMMET = 'insert'
+    FEATHER_FLOAT = 'alt'
+    HIGH_RISE = 'space'
 
     # Buffs
-    WEAVE_INFUSION = 'f1'
-    HERO_OF_THE_FLORA = 'f2'
-    SPEED_INFUSION = 'f3'
-    HOLY_SYMBOL = 'f4'
-    SHARP_EYE = 'f5'
-    COMBAT_ORDERS = 'f6'
-    ADVANCED_BLESSING = 'f7'
-    CONVERSION_OVERDRIVE = 'f8'
-    WEAPON_AURA = 'f9'
-    DIVINE_WRATH = 'end'
-    GRANDIS_GODDESS = 'page up'
-    LEGACY_RESTORATION = 'page down'
+    WEAVE_INFUSION = 'delete'
+    # HERO_OF_THE_FLORA = 'f2'
+    # SPEED_INFUSION = 'f3'
+    # HOLY_SYMBOL = 'f11'
+    # SHARP_EYE = 'f5'
+    # COMBAT_ORDERS = 'f6'
+    # ADVANCED_BLESSING = 'f7'
+    # CONVERSION_OVERDRIVE = 'f8'
+    # WEAPON_AURA = 'f9'
+    DIVINE_WRATH = 'f9'
+    # GRANDIS_GODDESS = 'page up'
+    # LEGACY_RESTORATION = 'page down'
 
     # Buffs Toggle
-    AETHER_FORGE = 'f10'
-    AETHERIAL_ARMS = 'f11'
+    AETHER_FORGE = 'f6'
+    AETHERIAL_ARMS = 'f7'
 
     # Skills
-    CLEAVE = 'q'
-    HUNTING_DECREE = 'w'
-    RUIN = 'e'
-    STORM = 't'
-    NOBLE_SUMMONS = 'a'
-    AETHER_BLOOM = 's'
-    REIGN_OF_DESTRUCTION = 'd'
-    SHARDBREAKER = 'g'
-    MAGIC_DISPATCH = 'shift'
-    TRUE_NOBILITY = 'x'
-    GRAVE_PROCLAMATION = 'c'
-    BLADE_TORRENT = 'b'
-    INFINITY_BLADE = 'home'
-    LUCID_SOUL = '3'
-    ARACHNID = '4'
-    ERDA_SHOWER = 'h'
+    CLEAVE = 'v'
+    HUNTING_DECREE = 'd'
+    RUIN = 'z'
+    STORM = 'end'
+    NOBLE_SUMMONS = 'x'
+    AETHER_BLOOM = 'f'
+    REIGN_OF_DESTRUCTION = 'h'
+    SHARDBREAKER = 'k'
+    MAGIC_DISPATCH = 'f4'
+    TRUE_NOBILITY = 'home'
+    GRAVE_PROCLAMATION = 'n'
+    BLADE_TORRENT = 'g'
+    INFINITY_BLADE = 'j'
+    # LUCID_SOUL = '3'
+    # ARACHNID = '4'
+    # ERDA_SHOWER = 'h'
 
 
 #########################
@@ -140,30 +140,33 @@ class Buff(Command):
         self.decent_buff_time = 0
 
     def main(self):
-        buffs = [Key.SPEED_INFUSION, Key.HOLY_SYMBOL, Key.SHARP_EYE, Key.COMBAT_ORDERS, Key.ADVANCED_BLESSING]
+        buffs = [Key.WEAVE_INFUSION] #, Key.HOLY_SYMBOL, Key.SHARP_EYE, Key.COMBAT_ORDERS, Key.ADVANCED_BLESSING]
         now = time.time()
 
         if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
-	        press(Key.DIVINE_WRATH, 2)
-	        self.cd120_buff_time = now
+            press(Key.DIVINE_WRATH, 2)
+            self.cd120_buff_time = now
         if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
-	        press(Key.WEAPON_AURA, 2)
-	        press(Key.LEGACY_RESTORATION, 2)
-	        self.cd180_buff_time = now
-        if self.cd200_buff_time == 0 or now - self.cd200_buff_time > 200:
-	        press(Key.WEAVE_INFUSION, 2)
-	        press(Key.CONVERSION_OVERDRIVE, 2)
-	        self.cd200_buff_time = now
-        if self.cd240_buff_time == 0 or now - self.cd240_buff_time > 240:
-	        press(Key.GRANDIS_GODDESS, 2)
-	        self.cd240_buff_time = now
-        if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	        press(Key.HERO_OF_THE_FLORA, 2)
-	        self.cd900_buff_time = now
-        if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 3, up_time=0.3)
-	        self.decent_buff_time = now		
+            press(Key.WEAVE_INFUSION, 2)
+            self.cd180_buff_time = now
+        # if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
+	    #     press(Key.WEAPON_AURA, 2)
+	    #     press(Key.LEGACY_RESTORATION, 2)
+	    #     self.cd180_buff_time = now
+        # if self.cd200_buff_time == 0 or now - self.cd200_buff_time > 200:
+	    #     press(Key.WEAVE_INFUSION, 2)
+	    #     press(Key.CONVERSION_OVERDRIVE, 2)
+	    #     self.cd200_buff_time = now
+        # if self.cd240_buff_time == 0 or now - self.cd240_buff_time > 240:
+	    #     press(Key.GRANDIS_GODDESS, 2)
+	    #     self.cd240_buff_time = now
+        # if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
+	    #     press(Key.HERO_OF_THE_FLORA, 2)
+	    #     self.cd900_buff_time = now
+        # if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
+	    #     for key in buffs:
+		#         press(key, 3, up_time=0.3)
+	    #     self.decent_buff_time = now		
 
 			
 class Resonance(Command):

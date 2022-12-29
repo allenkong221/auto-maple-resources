@@ -1,0 +1,34 @@
+
+@, label=main1
+*, x=0.203, y=0.068, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=down, jump=True
+*, x=0.203, y=0.165, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Fall, distance=0.05
+*, x=0.737, y=0.068, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Teleport, direction=down, jump=True
+*, x=0.737, y=0.165, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Fall, distance=0.05
+>, label=loot, frequency=12, skip=True
+>, label=main1, frequency=1, skip=False
+>, label=main1, frequency=1, skip=False
+>, label=main1, frequency=1, skip=False
+
+@, label=loot
+*, x=0.203, y=0.068, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+    Teleport, direction=down, jump=True
+*, x=0.203, y=0.165, frequency=1, skip=False, adjust=True
+    Lightning, direction=right, attacks=1, repetitions=1
+*, x=0.424, y=0.165, frequency=1, skip=False, adjust=True
+    Elquines
+    SpiritSnow
+*, x=0.547, y=0.165, frequency=1, skip=False, adjust=True
+    ErdaFountain, direction=down
+*, x=0.716, y=0.165, frequency=1, skip=False, adjust=True
+    Lightning, direction=left, attacks=1, repetitions=1
+    Fall, distance=0.05
+>, label=main1, frequency=1, skip=False

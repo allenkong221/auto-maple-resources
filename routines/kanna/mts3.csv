@@ -1,4 +1,4 @@
-s, adjust_tolerance, 0.0125
+$, target=adjust_tolerance, value=0.035
 
 
 
@@ -39,7 +39,8 @@ s, adjust_tolerance, 0.0125
 *, 0.283, 0.303
     legion
 *, 0.283, 0.303
-    goto, main1
+>, main1
+
 
 @, main1
 *, 0.283, 0.303, adjust=True
@@ -52,15 +53,15 @@ s, adjust_tolerance, 0.0125
     wait, 0.3
     shikigami, direction=right, attacks=3
     teleport, direction=down
-*, 0.460, 0.342, frequency=4, counter=1
+*, 0.460, 0.342, frequency=4, frequency=1
     shikigami, direction=right
-*, 0.500, 0.342, frequency=4, counter=1
-    goto, boss1
+*, 0.500, 0.342, frequency=4, frequency=1
+>, boss1
 *, 0.283, 0.303
     teleport, direction=right
     shikigami, direction=right
 *, 0.283, 0.303
-    goto, main1
+>, main1
 
 @, main2
 *, 0.283, 0.303, adjust=True
@@ -73,15 +74,15 @@ s, adjust_tolerance, 0.0125
     wait, 0.3
     shikigami, direction=right, attacks=3
     teleport, direction=down
-*, 0.460, 0.342, frequency=5, counter=1
+*, 0.460, 0.342, frequency=5, frequency=1
     shikigami, direction=right
-*, 0.500, 0.342, frequency=5, counter=1
-    goto, boss2
+*, 0.500, 0.342, frequency=5, frequency=1
+>, boss2
 *, 0.283, 0.303
     teleport, direction=right
     shikigami, direction=right
 *, 0.283, 0.303
-    goto, main2
+>, main2
 
 @, boss1
 *, 0.539, 0.237
@@ -90,10 +91,10 @@ s, adjust_tolerance, 0.0125
     teleport, direction=down
 *, 0.530, 0.342
     shikigami, direction=left
-*, 0.500, 0.342, frequency=3, counter=1
-    goto, main2
+*, 0.500, 0.342, frequency=3, frequency=1
+>, main2
 *, 0.500, 0.342
-    goto, main1
+>, main1
 
 @, boss2
 *, 0.539, 0.237
@@ -103,7 +104,7 @@ s, adjust_tolerance, 0.0125
 *, 0.530, 0.342
     shikigami, direction=left
 *, 0.500, 0.342
-    goto, loot_with_domain
+>, loot_with_domain
 
 
 
@@ -160,7 +161,7 @@ s, adjust_tolerance, 0.0125
     wait, 0.3
     teleport, direction=right
 *, 0.715, 0.138
-    goto, main3
+>, main3
 
 @, main3
 *, 0.715, 0.138
@@ -177,11 +178,11 @@ s, adjust_tolerance, 0.0125
 *, 0.715, 0.303, frequency=3, adjust=True
     exorcist
     wait, 0.3
-*, 0.715, 0.303, frequency=12, counter=1
+*, 0.715, 0.303, frequency=12, frequency=1
     teleport, direction=left, jump=True
-    goto, boss3
+>, boss3
 *, 0.715, 0.303
-    goto, main3
+>, main3
 
 @, boss3
 *, 0.539, 0.237
@@ -190,10 +191,10 @@ s, adjust_tolerance, 0.0125
     teleport, direction=down
 *, 0.530, 0.342
     shikigami, direction=left
-*, 0.500, 0.342, frequency=2, counter=1
-    goto, loot_no_domain
+*, 0.500, 0.342, frequency=2, frequency=1
+>, loot_no_domain
 *, 0.500, 0.342
-    goto, main4
+>, main4
 
 @, main4
 *, 0.283, 0.303, adjust=True
@@ -206,12 +207,12 @@ s, adjust_tolerance, 0.0125
     wait, 0.3
     shikigami, direction=right, attacks=3
     teleport, direction=down
-*, 0.460, 0.342, frequency=5, counter=1
+*, 0.460, 0.342, frequency=5, frequency=1
     shikigami, direction=right
-*, 0.500, 0.342, frequency=5, counter=1
-    goto, boss3
+*, 0.500, 0.342, frequency=5, frequency=1
+>, boss3
 *, 0.283, 0.303
     teleport, direction=right
     shikigami, direction=right
 *, 0.283, 0.303
-    goto, main4
+>, main4
